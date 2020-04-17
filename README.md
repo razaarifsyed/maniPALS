@@ -12,6 +12,8 @@ The app has many features like Signin/Signup Account Managing system. User profi
 ------
 Notes
 
+Please change my mysql password in the java net beans project source code. My MySQL password was "password" only, yours might be different. Find the connection statements in the java code and change the password accordingly. My MySQL username was 'root'.
+
 After setting up the database, you can run the Java application directly by going to the folder, "dist" and then opening "maniPALS.jar" file. 
 
 To set up the mysql database, please open the "dbs.txt" file. Just copy paste all the code to the mysql terminal. Don't copy the comments in the 'dbs.txt' file too by mistake. The comments are meant for you, to explain all the parts.
