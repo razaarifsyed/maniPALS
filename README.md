@@ -12,9 +12,12 @@ The app has many features like Signin/Signup Account Managing system. User profi
 ------
 Notes
 
-After setting up the database, you run the Java application directly by going to the folder, "dist" and then opening "maniPALS.jar" file. 
+After setting up the database, you can run the Java application directly by going to the folder, "dist" and then opening "maniPALS.jar" file. 
 
 To set up the mysql database, please open the "dbs.txt" file. Just copy paste all the code to the mysql terminal. Don't copy the comments in the 'dbs.txt' file too by mistake. The comments are meant for you, to explain all the parts.
+
+
+Let me know if you need any help or liked my work :)
 
 
 
