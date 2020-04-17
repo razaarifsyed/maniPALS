@@ -1,0 +1,36 @@
+
+						  		MANIPALS
+  							    TABLE CREATIONS
+
+						
+// I am using MySQL 5.5 version
+// My sql password is 'password'. yours might be different. so change accordingly
+// My username is 'root' only
+
+create database manipals;
+
+use manipals;
+
+create table personal ( uname varchar(30), pass varchar(30), name varchar(30), mobile bigint, age int,  gend varchar(30),  primary key(uname));
+
+create table profile ( uname varchar(30), regno bigint,  rating float, email varchar(50), collg varchar(30), year int, course varchar(30), url varchar(50), descr varchar(100), foreign key(uname) references personal(uname) ON UPDATE CASCADE ON DELETE CASCADE, primary key(uname,regno) );
+
+create table learn ( uname varchar(30), skill varchar(30), foreign key(uname) references profile(uname) ON UPDATE CASCADE ON DELETE CASCADE, primary key(uname,skill));
+
+create table teach ( uname varchar(30), skill varchar(30), foreign key(uname) references profile(uname) ON UPDATE CASCADE ON DELETE CASCADE, primary key(uname,skill));
+
+create table review ( uname varchar(30), review varchar(100), foreign key(uname) references profile(uname) ON UPDATE CASCADE ON DELETE CASCADE, primary key(uname,review));
+
+//uname is the name of the sender
+create table message ( uname varchar(30), message varchar(100), foreign key(uname) references profile(uname) ON UPDATE CASCADE ON DELETE CASCADE, primary key(uname,message));
+
+
+//table for pending requests below
+// uname is the sender, nm11 is reciever
+create table n1 ( uname varchar(30), nm11 varchar(100), foreign key(uname) references profile(uname) ON UPDATE CASCADE ON DELETE CASCADE, primary key(uname,nm11));
+
+//Table for confirmed network. People who have been accepted.
+//uname is the person accepting it. nm11 is the one who sent.
+create table n2 ( uname varchar(30), nm11 varchar(100), foreign key(uname) references profile(uname) ON UPDATE CASCADE ON DELETE CASCADE, primary key(uname,nm11));
+
+
