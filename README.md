@@ -10,7 +10,7 @@ The learner sends a connect request to the teacher, and if acccepted then he can
 The app has many features like Signin/Signup Account Managing system. User profiles(without different abstractions). Messaging service. Sending Friend Request, Friendlist, and of course the main feature - "Teach" or "Learn" a skill.
 
 ------
-Notes
+**Notes**
 
 Please change my mysql password in the java net beans project source code. My MySQL password was "password" only, yours might be different. Find the connection statements in the java code and change the password accordingly. My MySQL username was 'root'.
 
@@ -18,6 +18,8 @@ After setting up the database, you can run the Java application directly by goin
 
 To set up the mysql database, please open the "dbs.txt" file. Just copy paste all the code to the mysql terminal. Don't copy the comments in the 'dbs.txt' file too by mistake. The comments are meant for you, to explain all the parts.
 
+
+---------
 
 Let me know if you need any help or liked my work :)
 
